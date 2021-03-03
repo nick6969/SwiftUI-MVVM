@@ -7,19 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01F1902325EF33CC004DC0EF /* SwiftUI_MVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1902225EF33CC004DC0EF /* SwiftUI_MVVMApp.swift */; };
+		01F1902325EF33CC004DC0EF /* SwiftUIMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1902225EF33CC004DC0EF /* SwiftUIMVVMApp.swift */; };
 		01F1902525EF33CC004DC0EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1902425EF33CC004DC0EF /* ContentView.swift */; };
 		01F1902725EF33CD004DC0EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01F1902625EF33CD004DC0EF /* Assets.xcassets */; };
 		01F1902A25EF33CD004DC0EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01F1902925EF33CD004DC0EF /* Preview Assets.xcassets */; };
+		01F1903425EF3DF5004DC0EF /* BaseDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1903325EF3DF5004DC0EF /* BaseDataProtocol.swift */; };
+		01F1903825EF3E0F004DC0EF /* ViewModelLoadProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1903725EF3E0F004DC0EF /* ViewModelLoadProtocol.swift */; };
+		01F1903B25EF3E29004DC0EF /* ViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1903A25EF3E29004DC0EF /* ViewModelState.swift */; };
+		01F1903F25EF3E80004DC0EF /* ViewModelLoadFuncProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1903E25EF3E80004DC0EF /* ViewModelLoadFuncProtocol.swift */; };
+		01F1904225EF3EAF004DC0EF /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1904125EF3EAF004DC0EF /* ViewModelProtocol.swift */; };
+		01F1904525EF3F03004DC0EF /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1904425EF3F03004DC0EF /* BaseViewModel.swift */; };
+		01F1904925EF40D0004DC0EF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1904825EF40D0004DC0EF /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01F1901F25EF33CC004DC0EF /* SwiftUI-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		01F1902225EF33CC004DC0EF /* SwiftUI_MVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MVVMApp.swift; sourceTree = "<group>"; };
+		01F1902225EF33CC004DC0EF /* SwiftUIMVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMVVMApp.swift; sourceTree = "<group>"; };
 		01F1902425EF33CC004DC0EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		01F1902625EF33CD004DC0EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01F1902925EF33CD004DC0EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		01F1902B25EF33CD004DC0EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01F1903325EF3DF5004DC0EF /* BaseDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataProtocol.swift; sourceTree = "<group>"; };
+		01F1903725EF3E0F004DC0EF /* ViewModelLoadProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelLoadProtocol.swift; sourceTree = "<group>"; };
+		01F1903A25EF3E29004DC0EF /* ViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelState.swift; sourceTree = "<group>"; };
+		01F1903E25EF3E80004DC0EF /* ViewModelLoadFuncProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelLoadFuncProtocol.swift; sourceTree = "<group>"; };
+		01F1904125EF3EAF004DC0EF /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		01F1904425EF3F03004DC0EF /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		01F1904825EF40D0004DC0EF /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,8 +50,8 @@
 		01F1901625EF33CC004DC0EF = {
 			isa = PBXGroup;
 			children = (
-				01F1902125EF33CC004DC0EF /* SwiftUI-MVVM */,
 				01F1902025EF33CC004DC0EF /* Products */,
+				01F1902125EF33CC004DC0EF /* SwiftUI-MVVM */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,11 +66,13 @@
 		01F1902125EF33CC004DC0EF /* SwiftUI-MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				01F1902225EF33CC004DC0EF /* SwiftUI_MVVMApp.swift */,
-				01F1902425EF33CC004DC0EF /* ContentView.swift */,
-				01F1902625EF33CD004DC0EF /* Assets.xcassets */,
-				01F1902B25EF33CD004DC0EF /* Info.plist */,
+				01F1904725EF40A6004DC0EF /* ApiClient */,
 				01F1902825EF33CD004DC0EF /* Preview Content */,
+				01F1903225EF3DDD004DC0EF /* ViewModel */,
+				01F1902625EF33CD004DC0EF /* Assets.xcassets */,
+				01F1902425EF33CC004DC0EF /* ContentView.swift */,
+				01F1902B25EF33CD004DC0EF /* Info.plist */,
+				01F1902225EF33CC004DC0EF /* SwiftUIMVVMApp.swift */,
 			);
 			path = "SwiftUI-MVVM";
 			sourceTree = "<group>";
@@ -69,6 +85,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		01F1903225EF3DDD004DC0EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				01F1903325EF3DF5004DC0EF /* BaseDataProtocol.swift */,
+				01F1904425EF3F03004DC0EF /* BaseViewModel.swift */,
+				01F1903E25EF3E80004DC0EF /* ViewModelLoadFuncProtocol.swift */,
+				01F1903725EF3E0F004DC0EF /* ViewModelLoadProtocol.swift */,
+				01F1904125EF3EAF004DC0EF /* ViewModelProtocol.swift */,
+				01F1903A25EF3E29004DC0EF /* ViewModelState.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		01F1904725EF40A6004DC0EF /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				01F1904825EF40D0004DC0EF /* APIClient.swift */,
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,6 +116,7 @@
 				01F1901B25EF33CC004DC0EF /* Sources */,
 				01F1901C25EF33CC004DC0EF /* Frameworks */,
 				01F1901D25EF33CC004DC0EF /* Resources */,
+				01F1905225EF4747004DC0EF /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -126,20 +164,48 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01F1902A25EF33CD004DC0EF /* Preview Assets.xcassets in Resources */,
 				01F1902725EF33CD004DC0EF /* Assets.xcassets in Resources */,
+				01F1902A25EF33CD004DC0EF /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01F1905225EF4747004DC0EF /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		01F1901B25EF33CC004DC0EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F1904925EF40D0004DC0EF /* APIClient.swift in Sources */,
+				01F1903425EF3DF5004DC0EF /* BaseDataProtocol.swift in Sources */,
+				01F1904525EF3F03004DC0EF /* BaseViewModel.swift in Sources */,
 				01F1902525EF33CC004DC0EF /* ContentView.swift in Sources */,
-				01F1902325EF33CC004DC0EF /* SwiftUI_MVVMApp.swift in Sources */,
+				01F1902325EF33CC004DC0EF /* SwiftUIMVVMApp.swift in Sources */,
+				01F1903F25EF3E80004DC0EF /* ViewModelLoadFuncProtocol.swift in Sources */,
+				01F1903825EF3E0F004DC0EF /* ViewModelLoadProtocol.swift in Sources */,
+				01F1904225EF3EAF004DC0EF /* ViewModelProtocol.swift in Sources */,
+				01F1903B25EF3E29004DC0EF /* ViewModelState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +335,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-MVVM/Preview Content\"";
+				DEVELOPMENT_TEAM = DZBBP5D6DJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI-MVVM/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -290,6 +357,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-MVVM/Preview Content\"";
+				DEVELOPMENT_TEAM = DZBBP5D6DJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI-MVVM/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
