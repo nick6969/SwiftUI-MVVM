@@ -13,5 +13,7 @@ class BaseViewModel<Model: Decodable> {
     var state: ViewModelState = .initialize
     var disposables: Set<AnyCancellable> = []
     
+    @Published var error: Error?
+    @Published var isLoading: Bool = false
     @Published var models: [Model] = []
 }

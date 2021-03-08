@@ -9,6 +9,8 @@ import Combine
 
 public protocol ViewModelLoadProtocol: AnyObject {
     var state: ViewModelState { get set }
+    var error: Error? { get set }
+    var isLoading: Bool { get set }
     var disposables: Set<AnyCancellable> { get set }
     
     func refreshState()

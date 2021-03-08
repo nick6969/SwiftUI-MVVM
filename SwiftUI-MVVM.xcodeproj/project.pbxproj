@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01AECF3925F5D03A00C9E802 /* BaseListStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AECF3825F5D03A00C9E802 /* BaseListStack.swift */; };
 		01F1902325EF33CC004DC0EF /* SwiftUIMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1902225EF33CC004DC0EF /* SwiftUIMVVMApp.swift */; };
 		01F1902525EF33CC004DC0EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1902425EF33CC004DC0EF /* ContentView.swift */; };
 		01F1902725EF33CD004DC0EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01F1902625EF33CD004DC0EF /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01AECF3825F5D03A00C9E802 /* BaseListStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListStack.swift; sourceTree = "<group>"; };
 		01F1901F25EF33CC004DC0EF /* SwiftUI-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F1902225EF33CC004DC0EF /* SwiftUIMVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMVVMApp.swift; sourceTree = "<group>"; };
 		01F1902425EF33CC004DC0EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01AECF3725F5D01200C9E802 /* Componets */ = {
+			isa = PBXGroup;
+			children = (
+				01AECF3825F5D03A00C9E802 /* BaseListStack.swift */,
+			);
+			name = Componets;
+			path = ../Componets;
+			sourceTree = "<group>";
+		};
 		01F1901625EF33CC004DC0EF = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				01F1904725EF40A6004DC0EF /* ApiClient */,
+				01AECF3725F5D01200C9E802 /* Componets */,
 				01F1902825EF33CD004DC0EF /* Preview Content */,
 				01F1903225EF3DDD004DC0EF /* ViewModel */,
 				01F1902625EF33CD004DC0EF /* Assets.xcassets */,
@@ -199,6 +211,7 @@
 			files = (
 				01F1904925EF40D0004DC0EF /* APIClient.swift in Sources */,
 				01F1903425EF3DF5004DC0EF /* BaseDataProtocol.swift in Sources */,
+				01AECF3925F5D03A00C9E802 /* BaseListStack.swift in Sources */,
 				01F1904525EF3F03004DC0EF /* BaseViewModel.swift in Sources */,
 				01F1902525EF33CC004DC0EF /* ContentView.swift in Sources */,
 				01F1902325EF33CC004DC0EF /* SwiftUIMVVMApp.swift in Sources */,

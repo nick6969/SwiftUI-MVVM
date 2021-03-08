@@ -16,6 +16,7 @@ extension ViewModelLoadProtocol where Self: BaseDataProtocol, Self: ViewModelLoa
         switch state {
         case .initialize, .loadFail, .refreshLoading:
             state = .loadStart
+            isLoading = true
             process(loadData())
             
         case .loadDone, .loadMoreDone, .loadMoreFail:
@@ -40,8 +41,28 @@ extension ViewModelLoadProtocol where Self: BaseDataProtocol, Self: ViewModelLoa
             .sink(receiveCompletion: { [weak self] value in
                 guard let self = self else { return }
                 switch value {
-                case .finished: self.state.success()
-                case .failure: self.state.failure()
+                case .finished:
+                    switch self.state {
+                    case .loadStart:
+                        self.error = nil
+                        self.isLoading = false
+                        self.state = .loadDone
+                    case .loadMoreStart:
+                        self.error = nil
+                        self.state = .loadMoreDone
+                    default: break
+                    }
+                case let .failure(error):
+                    switch self.state {
+                    case .loadStart:
+                        self.state = .loadFail
+                        self.isLoading = false
+                        self.error = error
+                    case .loadMoreStart:
+                        self.state = .loadMoreFail
+                        self.error = error
+                    default: break
+                    }
                 }
             },
             receiveValue: { [weak self] models in

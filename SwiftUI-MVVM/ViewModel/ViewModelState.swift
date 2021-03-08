@@ -18,23 +18,3 @@ public enum ViewModelState {
     case noMoreCanLoad
     case refreshLoading
 }
-
-extension ViewModelState {
-    
-    mutating func success() {
-        switch self {
-        case .loadStart: self = .loadDone
-        case .loadMoreStart: self = .loadMoreDone
-        default: break
-        }
-    }
-    
-    mutating func failure() {
-        switch self {
-        case .loadStart: self = .loadFail
-        case .loadMoreStart: self = .loadMoreFail
-        default: break
-        }
-    }
-    
-}
