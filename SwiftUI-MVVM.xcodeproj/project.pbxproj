@@ -21,6 +21,7 @@
 		01F6A57E25F89CDA00665665 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F6A57D25F89CDA00665665 /* Model.swift */; };
 		01F6A58225F89D1200665665 /* APIClient-PetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F6A58125F89D1200665665 /* APIClient-PetInfo.swift */; };
 		01F6A58725F89DDB00665665 /* PetInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F6A58625F89DDB00665665 /* PetInfoViewModel.swift */; };
+		01F6A59125F8A04B00665665 /* PetInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F6A59025F8A04B00665665 /* PetInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		01F6A57D25F89CDA00665665 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		01F6A58125F89D1200665665 /* APIClient-PetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIClient-PetInfo.swift"; sourceTree = "<group>"; };
 		01F6A58625F89DDB00665665 /* PetInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetInfoViewModel.swift; sourceTree = "<group>"; };
+		01F6A59025F8A04B00665665 /* PetInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +87,9 @@
 				01AECF3725F5D01200C9E802 /* Componets */,
 				01F6A57C25F89CD000665665 /* Model */,
 				01F1902825EF33CD004DC0EF /* Preview Content */,
+				01F6A58F25F8A04700665665 /* View */,
 				01F1903225EF3DDD004DC0EF /* ViewModel */,
 				01F1902625EF33CD004DC0EF /* Assets.xcassets */,
-				01F1902425EF33CC004DC0EF /* ContentView.swift */,
 				01F1902B25EF33CD004DC0EF /* Info.plist */,
 				01F1902225EF33CC004DC0EF /* SwiftUIMVVMApp.swift */,
 			);
@@ -138,6 +140,15 @@
 				01F1903A25EF3E29004DC0EF /* ViewModelState.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		01F6A58F25F8A04700665665 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01F1902425EF33CC004DC0EF /* ContentView.swift */,
+				01F6A59025F8A04B00665665 /* PetInfoView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +249,7 @@
 				01F1904525EF3F03004DC0EF /* BaseViewModel.swift in Sources */,
 				01F1902525EF33CC004DC0EF /* ContentView.swift in Sources */,
 				01F6A57E25F89CDA00665665 /* Model.swift in Sources */,
+				01F6A59125F8A04B00665665 /* PetInfoView.swift in Sources */,
 				01F6A58725F89DDB00665665 /* PetInfoViewModel.swift in Sources */,
 				01F1902325EF33CC004DC0EF /* SwiftUIMVVMApp.swift in Sources */,
 				01F1903825EF3E0F004DC0EF /* ViewModelLoadProtocol.swift in Sources */,

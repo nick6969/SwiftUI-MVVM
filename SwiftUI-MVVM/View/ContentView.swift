@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                NavigationLink("毛豬價格", destination: PetInfoView())
+            }.navigationBarTitle("HomePage", displayMode: .inline)
+        }
     }
 }
 
