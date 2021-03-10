@@ -7,14 +7,15 @@
 
 import SwiftUI
 
-struct BaseListStack<ViewModel, Model, Cell>: View where Model: Codable & Identifiable & Hashable,
-                                                         Cell: View,
-                                                         ViewModel: BaseViewModel<Model>,
-                                                         ViewModel: ViewModelLoadProtocol {
+struct BaseListStack<ViewModel, Model, Cell, ErrorView>: View where Model: Codable & Identifiable & Hashable,
+                                                                    Cell: View,
+                                                                    ErrorView: View,
+                                                                    ViewModel: BaseViewModel<Model>,
+                                                                    ViewModel: ViewModelLoadProtocol {
     
     private(set) var viewModel: ViewModel
     private(set) var cellProvider: (Model) -> Cell
-    private(set) var errorViewProvider: (Error) -> Cell
+    private(set) var errorViewProvider: (Error) -> ErrorView
 
     var body: some View {
         ZStack(alignment: .center) {
