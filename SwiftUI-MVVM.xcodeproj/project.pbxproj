@@ -15,7 +15,6 @@
 		01F1903425EF3DF5004DC0EF /* BaseDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1903325EF3DF5004DC0EF /* BaseDataProtocol.swift */; };
 		01F1903825EF3E0F004DC0EF /* ViewModelLoadProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1903725EF3E0F004DC0EF /* ViewModelLoadProtocol.swift */; };
 		01F1903B25EF3E29004DC0EF /* ViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1903A25EF3E29004DC0EF /* ViewModelState.swift */; };
-		01F1903F25EF3E80004DC0EF /* ViewModelLoadFuncProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1903E25EF3E80004DC0EF /* ViewModelLoadFuncProtocol.swift */; };
 		01F1904225EF3EAF004DC0EF /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1904125EF3EAF004DC0EF /* ViewModelProtocol.swift */; };
 		01F1904525EF3F03004DC0EF /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1904425EF3F03004DC0EF /* BaseViewModel.swift */; };
 		01F1904925EF40D0004DC0EF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F1904825EF40D0004DC0EF /* APIClient.swift */; };
@@ -32,7 +31,6 @@
 		01F1903325EF3DF5004DC0EF /* BaseDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataProtocol.swift; sourceTree = "<group>"; };
 		01F1903725EF3E0F004DC0EF /* ViewModelLoadProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelLoadProtocol.swift; sourceTree = "<group>"; };
 		01F1903A25EF3E29004DC0EF /* ViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelState.swift; sourceTree = "<group>"; };
-		01F1903E25EF3E80004DC0EF /* ViewModelLoadFuncProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelLoadFuncProtocol.swift; sourceTree = "<group>"; };
 		01F1904125EF3EAF004DC0EF /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		01F1904425EF3F03004DC0EF /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		01F1904825EF40D0004DC0EF /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 			children = (
 				01F1903325EF3DF5004DC0EF /* BaseDataProtocol.swift */,
 				01F1904425EF3F03004DC0EF /* BaseViewModel.swift */,
-				01F1903E25EF3E80004DC0EF /* ViewModelLoadFuncProtocol.swift */,
 				01F1903725EF3E0F004DC0EF /* ViewModelLoadProtocol.swift */,
 				01F1904125EF3EAF004DC0EF /* ViewModelProtocol.swift */,
 				01F1903A25EF3E29004DC0EF /* ViewModelState.swift */,
@@ -215,7 +212,6 @@
 				01F1904525EF3F03004DC0EF /* BaseViewModel.swift in Sources */,
 				01F1902525EF33CC004DC0EF /* ContentView.swift in Sources */,
 				01F1902325EF33CC004DC0EF /* SwiftUIMVVMApp.swift in Sources */,
-				01F1903F25EF3E80004DC0EF /* ViewModelLoadFuncProtocol.swift in Sources */,
 				01F1903825EF3E0F004DC0EF /* ViewModelLoadProtocol.swift in Sources */,
 				01F1904225EF3EAF004DC0EF /* ViewModelProtocol.swift in Sources */,
 				01F1903B25EF3E29004DC0EF /* ViewModelState.swift in Sources */,

@@ -8,9 +8,9 @@
 import Combine
 import SwiftUI
 
-typealias ViewModelProtocol = BaseDataProtocol & ViewModelLoadProtocol & ViewModelLoadFuncProtocol & ObservableObject
+typealias ViewModelProtocol = BaseDataProtocol & ViewModelLoadProtocol & ObservableObject
 
-extension ViewModelLoadProtocol where Self: BaseDataProtocol, Self: ViewModelLoadFuncProtocol {
+extension ViewModelLoadProtocol where Self: BaseDataProtocol {
     
     func nextState() {
         switch state {
@@ -67,6 +67,7 @@ extension ViewModelLoadProtocol where Self: BaseDataProtocol, Self: ViewModelLoa
             },
             receiveValue: { [weak self] models in
                 guard let self = self else { return }
+                self.isLoading = false
                 switch self.state {
                 case .loadStart:
                     if models.isEmpty {

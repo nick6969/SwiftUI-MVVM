@@ -8,6 +8,8 @@
 import Combine
 
 public protocol ViewModelLoadProtocol: AnyObject {
+    associatedtype Model
+
     var state: ViewModelState { get set }
     var error: Error? { get set }
     var isLoading: Bool { get set }
@@ -15,4 +17,7 @@ public protocol ViewModelLoadProtocol: AnyObject {
     
     func refreshState()
     func nextState()
+    
+    func loadData() -> AnyPublisher<[Model], Error>
+    func loadDataMore() -> AnyPublisher<[Model], Error>
 }
