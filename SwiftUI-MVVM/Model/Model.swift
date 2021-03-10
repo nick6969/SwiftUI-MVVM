@@ -29,4 +29,3 @@ struct PetPriceModel: Codable, Hashable, Identifiable {
         case transNumAvgPrice = "TransNum_AvgPrice"
     }
 }
-
