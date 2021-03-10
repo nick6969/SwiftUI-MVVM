@@ -8,6 +8,10 @@
 import Foundation
 import Combine
 
+public enum ApiError: Error {
+    case badURL
+}
+
 final class APIClient {
     
     static let shared: APIClient = APIClient()
